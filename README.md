@@ -8,8 +8,9 @@ This contains the sourcecodes for 3 types of logging which are easy to implement
 ## Steps
 
 - Create your ResourceGroup: az group create -n aks-demo-rg -l westeurope
-- Create your AKS cluster with the following command:  az aks create --node-vm-size Standard_D2s_v3 -g aks-demo-rg -n aks-demo-cluster ( we need machines with more than 4GB mem )
-- az aks get-credentials -g aks-demo-rg -n aks-demo-cluster
+- Create your AKS cluster with the following command:  az aks create --node-vm-size Standard_D2s_v3 -g aks-demo-rg -n aks-demo-cluster
+( we need machines with more than 4GB mem )
+- az aks get-credentials -g aks-demo-rg -n aks-demo-cluster --generate-ssh-keys
 - git clone this repo: git clone https://github.com/pariwesh06/aks-efk.git
 - cd elastic-fluentd-kibana
 - 1_labelNodes.sh
